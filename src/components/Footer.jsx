@@ -66,6 +66,10 @@ export default function Footer() {
         <div className="mt-20 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-center items-center gap-2">
           <div className="text-[10px] uppercase font-bold tracking-widest text-gray-400">
             © 2026 Bipolar Factory. All Rights Reserved.
+            <div classname="text-[9px] font-mono text-gray-300 mt-1" align="center">
+              <br/>Developed by Ashutosh Gola
+            </div>
+            
           </div>
         </div>
       </div>

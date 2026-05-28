@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React,{ useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
@@ -30,7 +30,7 @@ export default function Navbar() {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 w-full z-100 px-20 md:px-16 py-6 flex justify-between items-center transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-100 px-6 md:px-16 py-4 flex justify-between items-center transition-all duration-300 ${
         scrolled ? 'bg-white/90 backdrop-blur-md py-4 border-b border-gray-100' : 'bg-transparent'
       }`}
     >
@@ -38,6 +38,7 @@ export default function Navbar() {
       <div className="font-black text-xl tracking-tighter uppercase cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
         BIPOLAR<span className="text-[#f25f2c]">.</span>FACTORY
       </div>
+      
 
       {/* Navigation Links */}
       <div className="hidden md:flex items-center gap-10">
