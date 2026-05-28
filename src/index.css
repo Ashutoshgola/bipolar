@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities; */
 @import "tailwindcss";
+
+
+/* This targets the selection highlight across the whole site */
+::selection {
+  background-color: #f25f2c; /* Your brand orange */
+  color: white;              /* Text color when highlighted */
+}
+
+/* For older versions of Firefox */
+::-moz-selection {
+  background-color: #f25f2c;
+  color: white;
+}
+
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
