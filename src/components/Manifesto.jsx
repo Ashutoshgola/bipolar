@@ -39,7 +39,7 @@ export default function Manifesto() {
         {/* Section Header */}
         <div className="mb-20">
           <span className="text-xs font-mono font-bold uppercase tracking-[0.3em] text-[#f25f2c]">
-            // Operational Philosophy
+            // Our Manifesto
           </span>
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mt-4">
             How We Think.

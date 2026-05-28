@@ -1,9 +1,8 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import About from './components/About';
 import Products from './components/Products';
 import Testimonials from './components/Testimonials';
 import Navbar from './components/Navbar';
-// import Hero from './components/Hero';
 import Manifesto from './components/Manifesto';
 import Footer from './components/Footer';
 import Clients from './components/Clients';
@@ -11,7 +10,6 @@ import Output from './components/Output';
 
 function App() {
   const [isDark, setIsDark] = useState(() => {
-    // Check if user previously saved a preference
     return localStorage.getItem('theme') === 'dark';
   });
 
@@ -25,10 +23,14 @@ function App() {
       localStorage.setItem('theme', 'light');
     }
   }, [isDark]);
+
   return (
-    <div className="min-h-screen bg-studio-bg text-studio-textMain selection:bg-studio-neon selection:text-black">
-      <Navbar />
-      {/* <Hero /> */}
+    /* 1. Added bg-white dark:bg-black to the main wrapper */
+    <div className="min-h-screen bg-white dark:bg-black transition-colors duration-500 selection:bg-[#f25f2c] selection:text-white">
+      
+      {/* 2. CRITICAL: Pass the props here! */}
+      <Navbar isDark={isDark} setIsDark={setIsDark} />
+      
       <main>
         <About />
         <Products />
