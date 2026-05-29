@@ -22,7 +22,7 @@ export default function Hero() {
         className="max-w-5xl space-y-6"
       >
         <motion.div variants={itemVariants} className="text-xs uppercase font-mono tracking-widest text-studio-neon">
-          // Digital Product Studio
+          // Digital Products Studio
         </motion.div>
         
         <motion.h1 variants={itemVariants} className="text-5xl md:text-8xl font-black tracking-tight leading-none uppercase">
@@ -41,7 +41,7 @@ export default function Hero() {
             href="#manifesto" 
             className="inline-flex items-center gap-3 border border-white/20 px-6 py-4 rounded-full font-mono text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-300 group"
           >
-            Explore the Paradox
+            Explore Here
             <ArrowDownRight className="w-4 h-4 group-hover:rotate-45 transition-transform duration-300" />
           </a>
         </motion.div>
